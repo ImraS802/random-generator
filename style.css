@@ -1,0 +1,46 @@
+body {
+  background-color: #30acba;
+}
+
+#container {
+  text-align: center;
+}
+
+button {
+  background-color: #72c3d4;
+  color: #114f5e;
+  font-size: 30px;
+  font-family: Verdana;
+  margin: 80px;
+  padding: 30px 60px;
+  border-radius: 70px;
+  border-color: #12424d;
+  box-shadow: 5px 5px 20px rgba(10, 10, 10, 0.9);
+  transition: all 100ms ease-in-out;
+  box-decoration-break: slice;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 900ms linear;
+  background-color: #bcdfe8;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+#output {
+  font-size: 40px;
+  margin: 120px 40px 0 40px;
+  font-family: fantasy;
+  color: #194d59;
+}
